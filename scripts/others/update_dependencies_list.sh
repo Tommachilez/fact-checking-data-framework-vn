@@ -10,10 +10,10 @@ if [[ -z "$VIRTUAL_ENV" ]]; then
 fi
 
 # Export dependencies to requirements.txt
-pip freeze > requirements.txt
+pip freeze > "$PWD/requirements.txt"
 
 if [[ $? -eq 0 ]]; then
-    echo "Dependencies saved successfully to requirements.txt."
+    echo "Dependencies saved successfully to $PWD/requirements.txt."
 else
     echo "Failed to save dependencies. Please check for errors."
 fi
