@@ -1,3 +1,6 @@
 ref_resources/
 .env
 .venv/
+scripts/tests/
+results/
+data/
